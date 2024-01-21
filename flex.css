@@ -1,0 +1,112 @@
+@media (max-width: 750px) {
+    .container{
+        width: 350px!important;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 32px!important;
+    }
+
+    .hero p {
+        font-size: 24px!important;
+    }
+
+    .header--title h2 {
+        font-size: 32px!important;
+    }
+    .header--title span {
+        font-size: 18px!important;
+    }
+    .menu-button-container {
+        display: flex!important;
+      }
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 60px!important;
+        left: 0;
+        flex-direction: column!important;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+        border-bottom: 1px solid #b9b9b9;
+        height: 2.5em;
+        padding: 10px;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+        display: flex!important;
+        justify-content: center;
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        color: var(--white);
+        background: rgba(217, 217, 217, 0.10);
+    }
+    .menu > li:not(:last-child) {
+        border-bottom: 1px solid #c7c7c7;
+    }
+
+    .nav > button {
+        display: none;
+    }
+
+    .second__cards {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .second__card {
+        margin: 0!important;
+        flex: 50%;
+    }
+
+    .second__card h2{
+        font-size: 42px!important;
+    }
+
+    .second__card span{
+        font-size: 18px!important;
+    }
+
+    .third {
+        flex-direction: column;
+    }
+    .third__left {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .third__left--card {
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+    }
+    
+    .fifth{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fifth__card {
+        width: 45%;
+    }
+
+    .packages {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+}
